@@ -1,5 +1,7 @@
 all:
-	gcc filters.c -o filters
-	./filters
+	gcc filters_fp.c -o filters_fp
+	gcc filters_int.c -o filters_int
+	./filters_fp
+	./filters_int
 clean:
-	rm filters
+	rm filters_int
