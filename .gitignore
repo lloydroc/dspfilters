@@ -31,3 +31,6 @@
 # Debug files
 *.dSYM/
 *.su
+
+filters_fp
+filters_int

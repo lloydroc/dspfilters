@@ -4,4 +4,4 @@ all:
 	./filters_fp
 	./filters_int
 clean:
-	rm filters_int
+	rm filters_int filters_fp
