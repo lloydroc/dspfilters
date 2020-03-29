@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-#define BUFF_SIZE 64
+#define BUFF_SIZE 16
 
 // http://faraday.ee.emu.edu.tr/EENG420/ince_ppts/IIR_filters.pdf
 // http://scistatcalc.blogspot.com/2013/12/fft-calculator.html
@@ -17,12 +17,12 @@ int main() {
     filt = &gc9_mod; // CHANGE this to test different filters
 
     make_impulse(data,BUFF_SIZE);
-    printf("\n\n");
+    printf("Real Output:\n");
     for(int i=0;i<BUFF_SIZE;i++) {
         long filtdata = filt(data[i]);
         printf("%ld\n",filtdata);
     }
-    printf("\n\n");
+    printf("\nImaginary Output:\n");
     for(int i=0;i<BUFF_SIZE;i++) {
         printf("0\n");
     }
